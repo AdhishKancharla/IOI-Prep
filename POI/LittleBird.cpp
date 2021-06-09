@@ -1,5 +1,9 @@
 /*
-SOLUTION : For each query, do a O(n) deque optimised DP. main observation: if for i, j, and dp[i] = dp[j] and i<j and arr[j]> arr[i], then just kick index j. Hence, we just maintain two deques. if the smallest number in first deque (1st deque => minimum dp possibile) is greater than arr[current], then we have to make dp[currnet] = dp[minpos]+1 atleast. so add it do dq2. when dq1 is empty, just switch them. 
+SOLUTION : For each query, do a O(n) deque optimised DP. 
+main observation: if for i, j, and dp[i] = dp[j] and i<j and arr[j]> arr[i], then just kick index j. 
+Hence, we just maintain two deques. 
+if the smallest number in first deque (1st deque => minimum dp possibile) is greater than arr[current], then we have to make dp[currnet] = dp[minpos]+1 atleast. 
+so add it do dq2. when dq1 is empty, just switch them. 
 */
 
 #include <stdio.h>     
